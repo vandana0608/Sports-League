@@ -1,0 +1,174 @@
+.schedule-page h1 {
+  color: #182C62;
+  font-size: 24px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.table-container {
+  border: 1px solid #E4EDF2;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #E4EDF2;
+  color: #4B5C68;
+  font-size: 12px;
+  text-align: left;
+  padding: 1rem;
+  font-weight: normal;
+}
+
+/* td {
+  padding: 1rem;
+  color: #4B5C68;
+  font-size: 14px;
+  vertical-align: middle;
+} */
+
+tr.even {
+  background-color: #F6F7F7;
+}
+
+/* .date-cell {
+  white-space: nowrap;
+  line-height: 1.4;
+} */
+
+/* .stadium {
+  color: #7B8A95;
+} */
+
+/* .team-cell {
+  min-width: 200px;
+} */
+
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-info.away {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.team-name {
+  color: #4B5C68;
+  font-size: 14px;
+}
+
+/* .score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 2rem;
+  white-space: nowrap;
+} */
+
+/* .flag {
+  width: 32px;
+  height: 24px;
+  object-fit: cover;
+} */
+
+.loading {
+  text-align: center;
+  color: #4B5C68;
+  padding: 2rem;
+}
+
+@media (max-width: 750px) {
+  .table-container {
+    margin: 0 -1rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+}
+
+/* Header alignments */
+.date-header {
+  text-align: right !important;
+}
+
+.stadium-header {
+  text-align: left !important;
+}
+
+.home-team-header {
+  text-align: right !important;
+  padding-left: 2rem;
+}
+
+.away-team-header {
+  text-align: left !important;
+  padding-left: 2rem;
+}
+
+/* Team cells */
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.home-team {
+  justify-content: flex-end; /* Right align content */
+}
+
+.away-team {
+  justify-content: flex-start; /* Left align content */
+}
+
+.team-name.bold {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4B5C68;
+}
+
+.flag {
+  width: 53px; /* As per specification */
+  height: 37px; /* As per specification */
+  object-fit: cover;
+}
+
+/* Score column */
+.score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+/* Table cell default styles */
+td {
+  padding: 1rem;
+  color: #4B5C68;
+  font-size: 14px;
+  vertical-align: middle;
+  height: 70px; /* As per specification */
+}
+
+/* Date cell */
+.date-cell {
+  text-align: right;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/* Stadium cell */
+.stadium {
+  color: #7B8A95;
+  text-align: left;
+}
+
